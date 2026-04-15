@@ -89,7 +89,7 @@ a {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.95fr;
+  grid-template-columns: 1.02fr 0.98fr;
   gap: 36px;
   align-items: center;
 }
@@ -168,7 +168,8 @@ p {
   background: #0f172a;
 }
 
-.card {
+.card,
+.visual-card {
   background: #0f172a;
   border: 1px solid #1e293b;
   border-radius: 24px;
@@ -176,7 +177,8 @@ p {
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22);
 }
 
-.card-label {
+.card-label,
+.visual-label {
   color: #94a3b8;
   font-size: 0.85rem;
   margin-bottom: 10px;
@@ -191,6 +193,68 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
+}
+
+.visual-card-large {
+  min-height: 300px;
+}
+
+.visual-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.svg-box-back {
+  fill: #13213c;
+  stroke: #345180;
+  stroke-width: 4;
+}
+
+.svg-box-main {
+  fill: #1a2e52;
+  stroke: #587ab6;
+  stroke-width: 4;
+}
+
+.svg-box-small,
+.svg-screen,
+.svg-doc-back,
+.svg-doc-front {
+  fill: #102543;
+  stroke: #5f8dda;
+  stroke-width: 4;
+}
+
+.svg-cart-panel {
+  fill: #17345f;
+  stroke: #7ea8f0;
+  stroke-width: 4;
+}
+
+.svg-line,
+.svg-line-soft,
+.svg-dash,
+.svg-cart {
+  fill: none;
+  stroke: #aac6ff;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.svg-dash {
+  stroke-dasharray: 8 10;
+}
+
+.svg-wheel,
+.svg-stamp {
+  fill: #87aef5;
+  opacity: 0.95;
+}
+
+.svg-truck {
+  fill: #88aff6;
+  opacity: 0.95;
 }
 
 .small-card {
@@ -217,7 +281,8 @@ p {
   background: rgba(15, 23, 42, 0.45);
 }
 
-.grid-3 {
+.grid-3,
+.overview-grid {
   margin-top: 28px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -280,6 +345,7 @@ p {
 @media (max-width: 900px) {
   .hero-grid,
   .grid-3,
+  .overview-grid,
   .two-col,
   .mini-grid {
     grid-template-columns: 1fr;
